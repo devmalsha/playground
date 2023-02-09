@@ -3,10 +3,11 @@
 }
 
 .container {
+  height: 800px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .menu-description {
@@ -16,7 +17,7 @@
   /* margin: 0px 25px; */
   padding: 0px 10px;
   border: 2px solid #cb1212;
-  width: 300px;
+  /* width: 300px; */
 }
 .menu-description h2 {
   font-size: 1.2em;
