@@ -1,25 +1,20 @@
-.body {
-  border: 0;
+nav {
+  font-size: 2rem;
+  background-color: #f1f1f1;
 }
 
-.container {
-  height: 800px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+nav ul {
+  list-style-type: decimal;
+  display: list-item;
+  margin: 0;
+  padding: 50px;
 }
 
-.menu-description {
-  background-color: black;
-  opacity: 85%;
-  color: #fff;
-  /* margin: 0px 25px; */
-  padding: 0px 10px;
-  border: 2px solid #cb1212;
-  /* width: 300px; */
+nav ul li {
+  cursor: pointer;
+  padding: 0.5rem;
 }
-.menu-description h2 {
-  font-size: 1.2em;
-  font-weight: bold;
+nav ul li:hover {
+  background-color: #555;
+  color: white;
 }
