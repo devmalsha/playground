@@ -1,33 +1,14 @@
-nav {
-  font-size: 2rem;
-  background-color: #f1f1f1;
-}
-
-nav ul {
-  list-style-type: none;
-  display: list-item;
-  margin: 0;
-  padding: 0;
+.container {
+  border: 5px solid black;
+  width: 500px;
+  height: 500px;
   display: flex;
-  /* justify-content: space-around; */
+  justify-content: center;
+  align-items: center;
 }
 
-nav ul li {
-  cursor: pointer;
-  padding: 0.5rem;
-  text-align: center;
-  flex: auto;
-}
-nav ul li:hover {
-  background-color: #555;
-  color: white;
-}
-
-@media all and (max-width: 400px) {
-  nav ul {
-    flex-direction: column;
-  }
-  nav ul li {
-    text-align: center;
-  }
+.item {
+  width: 100px;
+  height: 100px;
+  border: 3px solid yellow;
 }
