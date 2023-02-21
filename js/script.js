@@ -1,12 +1,6 @@
-let x = 4,
-  y = 4;
-if (x === y) {
-  console.log("x is equal to y");
+if (false || null || undefined || "" || 0 || NaN) {
+  console.log("This is not printed since the condition is false");
 }
-
-x = "4";
-if (x === y) {
-  console.log("x is equal to y");
-} else {
-  console.log("x is not equal to y");
+if (true && "hello" && 1 && -1 && "false") {
+  console.log("This will be printed since the condition is true");
 }
