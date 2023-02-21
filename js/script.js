@@ -1,6 +1,10 @@
-console.log((5+4)/3);
-function test1 (a){
-    console.log(a/3);
+let x = 4,
+  y = 4;
+if (x == y) {
+  console.log("x & y are equal");
 }
 
-test1 ();
+x = "4";
+if (x == y) {
+  console.log("x & y are equal");
+}
