@@ -1,7 +1,9 @@
-let sum = 0;
-for (let i = 0; i < 10; i++) {
-  console.log("before sum" + i);
-  sum = sum + i;
-  console.log(sum);
+function orderChikenWith(sideDish) {
+  if (sideDish == undefined) {
+    console.log("chicken only");
+  } else {
+    console.log("Chicken with " + sideDish);
+  }
 }
-console.log("Sum is " + sum);
+orderChikenWith();
+orderChikenWith("rice");
