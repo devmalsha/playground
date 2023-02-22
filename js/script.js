@@ -1,6 +1,7 @@
-if (false || null || undefined || "" || 0 || NaN) {
-  console.log("This is not printed since the condition is false");
+let sum = 0;
+for (let i = 0; i < 10; i++) {
+  console.log("before sum" + i);
+  sum = sum + i;
+  console.log(sum);
 }
-if (true && "hello" && 1 && -1 && "false") {
-  console.log("This will be printed since the condition is true");
-}
+console.log("Sum is " + sum);
