@@ -1,9 +1,9 @@
-function orderChikenWith(sideDish) {
-  if (sideDish == undefined) {
-    console.log("chicken only");
-  } else {
-    console.log("Chicken with " + sideDish);
-  }
-}
-orderChikenWith();
-orderChikenWith("rice");
+// let company = new Object();
+// company.name = "facebook";
+// console.log(company);
+
+let objectName = new Object();
+objectName.firstProperty = "first value";
+objectName.secondProperty = 2;
+
+console.log(objectName);
