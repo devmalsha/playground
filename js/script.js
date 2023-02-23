@@ -6,6 +6,7 @@ let objectName = {
     subProp2: "subvalue 2",
   },
   property4: "value 4",
+  property5: "value5",
 };
 
 console.log(objectName);
