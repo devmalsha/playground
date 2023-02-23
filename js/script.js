@@ -1,8 +1,11 @@
-function callBymyName() {
-  let fullName = new Object();
-  fullName.firstName = "Thedath";
-  fullName.secondName = "Oudarya";
-  console.log(fullName["firstName"] + " " + fullName["secondName"]);
-}
+let objectName = {
+  property1: "value 1",
+  property2: "value 2",
+  property3: {
+    subProp1: "subvalue 1",
+    subProp2: "subvalue 2",
+  },
+  property4: "value 4",
+};
 
-callBymyName();
+console.log(objectName);
