@@ -13,4 +13,4 @@ console.log(d);
 
 d.x = 3;
 console.log(c);
-console.log(d.x);
+console.log(d);
