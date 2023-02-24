@@ -29,19 +29,24 @@ console.log(treeType.categorizing());
 
 function MotorStatus(color) {
   this.color = color;
-  this.colorCode = function () {
-    if (color == "red") {
-      console.log("Motor Stopped");
-    } else if (color == "orange") {
-      console.log("Motor Tripped");
-    } else if (color == "green") {
-      console.log("Motor Running");
-    } else {
-      console.log("Power failure");
-    }
-    return this.color;
-  };
 }
+MotorStatus.prototype.colorCode = function () {
+  if (this.color == "red") {
+    console.log("Motor Stopped");
+  } else if (this.color == "orange") {
+    console.log("Motor Tripped");
+  } else if (this.color == "green") {
+    console.log("Motor Running");
+  } else {
+    console.log("Power failure");
+  }
+  return;
+};
 
 const motor1 = new MotorStatus("green");
 motor1.colorCode();
+console.log(motor1);
+
+const motor2 = new MotorStatus("Orange");
+motor2.colorCode();
+console.log(motor2);
