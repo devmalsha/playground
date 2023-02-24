@@ -1,20 +1,16 @@
-function makeMultiplier(multiplier) {
-  function myFunc(x) {
-    return multiplier * x;
-  }
-  return myFunc;
-}
+let a = 5;
+let b = a;
+console.log(a);
+console.log(b);
+b = 10;
+console.log("After changing b, a is: " + a);
+console.log("After changing b, b is: " + b);
 
-let multiplyBy3 = makeMultiplier(3);
-console.log(multiplyBy3(10));
-let doubleAll = makeMultiplier(2);
-console.log(doubleAll(100));
+let c = { x: 4 };
+let d = c;
+console.log(c);
+console.log(d);
 
-// Passing functions as a arguments
-
-function doOperationOn(x, operation) {
-  return operation(x);
-}
-
-let result = doOperationOn(5, multiplyBy3);
-console.log(result);
+d.x = 3;
+console.log(c);
+console.log(d.x);
