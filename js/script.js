@@ -1,16 +1,47 @@
-let a = 5;
-let b = a;
-console.log(a);
-console.log(b);
-b = 10;
-console.log("After changing b, a is: " + a);
-console.log("After changing b, b is: " + b);
+function Circle(radius) {
+  this.rad = radius;
+  this.getArea = function () {
+    return Math.PI * Math.pow(this.rad, 2);
+  };
+}
+const myCircle = new Circle(5);
+console.log(myCircle.getArea());
 
-let c = { x: 4 };
-let d = c;
-console.log(c);
-console.log(d);
+// Example 2
+function TreeSelector(height) {
+  this.h = height;
+  // console.log("hello1");
+  this.categorizing = function () {
+    // console.log("hello2");
+    if (this.h > 5) {
+      console.log("This is a tall tree");
+    } else {
+      console.log("This is a short tree");
+    }
+    return this.h;
+  };
+}
 
-d.x = 3;
-console.log(c);
-console.log(d);
+const treeType = new TreeSelector(8);
+console.log(treeType.categorizing());
+
+// Example 3
+
+function MotorStatus(color) {
+  this.color = color;
+  this.colorCode = function () {
+    if (color == "red") {
+      console.log("Motor Stopped");
+    } else if (color == "orange") {
+      console.log("Motor Tripped");
+    } else if (color == "green") {
+      console.log("Motor Running");
+    } else {
+      console.log("Power failure");
+    }
+    return this.color;
+  };
+}
+
+const motor1 = new MotorStatus("green");
+motor1.colorCode();
