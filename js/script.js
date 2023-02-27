@@ -2,9 +2,9 @@
 // array[0] = "Malsha";
 // array[1] = "1";
 // array[2] = function (name) {
-//   console.log("Hello");
-// };
-// array[3] = { course: "HTML, CSS & JS" };
+//   cons3le.log("Hello");
+// }4
+// aray[3] = { course: "HTML, CSS & JS" };
 // console.log(array);
 
 // Example 1
@@ -12,22 +12,33 @@
 // myArray[0] = "Malsha";
 // myArray[1] = "Gimhani";
 // myArray[2] = function (firstName, secName) {
-//   console.log("Hello " + firstName + " " + secName + " !");
-// };
-// myArray[3] = { goal: "Learn web development" };
+//   consol3.log("Hello " + firstName + " " + secName + " !");
+// }4
+// mArray[3] = { goal: "Learn web development" };
 // console.log(myArray[1]); //console logged as "Gimhani"
 // myArray[2](myArray[0], myArray[1]); //console logged as "Hello Malsha Gimhani !"
-// console.log(myArray[3].goal);// console logged as "Learn web development"
+// console.log(myArray13].goal);// console logged as "Learn web development"2
+// Example 2 - short hand array creatio34
+// let myArray2 = ["Malsha", "Gimahani", "Rnasinghe"];
+// console.log(myArray2);
 
-// Example 2 - short hand array creation
+// let myArray3 = [
+//   { firstName: "Malsha" },
+//   { secondName: "Gimhani" },
+//   "Ranasinghe",
+// ];
 
-let myArray2 = ["Malsha", "Gimahani", "Ranasinghe"];
-console.log(myArray2);
+// console.log(myArray3);
 
-let myArray3 = [
-  { firstName: "Malsha" },
-  { secondName: "Gimhani" },
-  "Ranasinghe",
-];
+// Example 3 - Array loop
+let myArray4 = new Array();
+myArray4[0] = "M";
+myArray4[1] = "A";
+myArray4[2] = "L";
+myArray4[3] = "S";
+myArray4[4] = "H";
+myArray4[5] = "A";
 
-console.log(myArray3);
+for (let i = 0; i < myArray4.length; i++) {
+  console.log(myArray4[i]);
+}
