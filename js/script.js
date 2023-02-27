@@ -31,14 +31,31 @@
 // console.log(myArray3);
 
 // Example 3 - Array loop
-let myArray4 = new Array();
-myArray4[0] = "M";
-myArray4[1] = "A";
-myArray4[2] = "L";
-myArray4[3] = "S";
-myArray4[4] = "H";
-myArray4[5] = "A";
+// let myArray4 = new Array();
+// myArray4[0] = "M";
+// myArray4[1] = "A";
+// myArray4[2] = "L";
+// myArray4[3] = "S";
+// myArray4[4] = "H";
+// myArray4[5] = "A";
 
-for (let i = 0; i < myArray4.length; i++) {
-  console.log(myArray4[i]);
+// for (let i = 0; i < myArray4.length; i++) {
+//   console.log(myArray4[i]);
+// }
+
+// Example 4
+let myArray5 = new Array();
+myArray5[0] = "Malsha";
+myArray5[1] = "Gimhani";
+myArray5[2] = "Ranasinghe";
+myArray5[3] = "Thedath";
+myArray5[4] = "Oudarya";
+
+for (let i = 0; i < myArray5.length; i++) {
+  console.log(myArray5[i]);
+}
+
+myArray5[100] = "Karunarathne";
+for (let i = 0; i < myArray5.length; i++) {
+  console.log(myArray5[i]);
 }
