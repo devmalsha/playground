@@ -16,8 +16,17 @@ let myArray = ["malsha", "gimhani", "ranasinghe"];
 //   console.log("Hello " + myArray[names]);
 // }
 
-myArray.spouse = "Thedath";
+// myArray.spouse = "Thedath";
 
-for (let names in myArray) {
-  console.log("Hello " + myArray[names]);
+// for (let names in myArray) {
+//   console.log("Hello " + myArray[names]);
+// }
+
+function makeMultiplier(multiplier) {
+  return function (x) {
+    return multiplier * x;
+  };
 }
+let doubleAll = makeMultiplier(2);
+// console.log(doubleAll(2));
+console.log(doubleAll(10));
