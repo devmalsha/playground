@@ -5,8 +5,10 @@ function sayHello() {
   document.getElementById("content").innerHTML = messege;
 
   if (name === "student") {
-    let tittle = document.querySelector("#tittle").textContent;
+    let tittle = document.querySelector("h1").textContent;
     tittle += " & Love it !";
-    document.querySelector("#tittle").textContent = tittle;
+    document.querySelector("h1").textContent = tittle;
   }
 }
+
+document.querySelector("button").addEventListener("click", sayHello);
