@@ -6,6 +6,7 @@ function sayHello() {
 
   if (name === "student") {
     let tittle = document.querySelector("#tittle").textContent;
-    tittle += "& Love it !";
+    tittle += " & Love it !";
+    document.querySelector("#tittle").textContent = tittle;
   }
 }
