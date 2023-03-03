@@ -19,7 +19,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
   document
     .querySelector("body")
     .addEventListener("mousemove", function (event) {
-      console.log("X cordinate: " + event.clientX);
-      console.log("Y cordinate: " + event.clientY);
+      if (event.shiftKey === true) {
+        console.log("X cordinate: " + event.clientX);
+        console.log("Y cordinate: " + event.clientY);
+      }
     });
 });
