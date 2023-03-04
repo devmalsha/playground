@@ -1,2 +1,0 @@
-malshaGreeter.sayHello();
-gimhaniGreeter.sayHi();
