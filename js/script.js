@@ -23,6 +23,52 @@
 /* Exercise 2
  ------------------------ */
 
-let findFileExtention = (fileName) => fileName.slice(fileName.lastIndexOf("."));
-console.log(findFileExtention("fileName.doc"));
-console.log(findFileExtention("fileName.js"));
+// let findFileExtention = (fileName) => fileName.slice(fileName.lastIndexOf("."));
+// console.log(findFileExtention("fileName.doc"));
+// console.log(findFileExtention("fileName.js"));
+// console.log(findFileExtention("fileName.config.js"));
+
+/* Exercise 3 */
+function wordPlay(word) {
+  for (let i = 0; i < word.length; i++) {
+    let alphabet = [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "j",
+      "k",
+      "l",
+      "m",
+      "n",
+      "p",
+      "q",
+      "r",
+      "s",
+      "t",
+      "u",
+      "v",
+      "w",
+      "x",
+      "y",
+      "z",
+    ];
+    for (let j = 0; j < alphabet.length; j++) {
+      if (alphabet[j] == word[i]) {
+        let letter = alphabet[j + 1];
+        if (letter == undefined) {
+          console.log("a");
+        } else {
+          console.log(letter);
+        }
+      }
+    }
+  }
+}
+
+wordPlay("malshza");
