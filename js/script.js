@@ -12,10 +12,17 @@
 //   }
 // }
 
-let checkFunc = (value1, value2) =>
-  value1 === 100 || value2 === 100 || value1 + value2 === 100;
-console.log(checkFunc(0, 100));
-console.log(checkFunc(100, 0));
-console.log(checkFunc(90, 10));
-console.log(checkFunc(40, 60));
-console.log(checkFunc(40, 0));
+// let checkFunc = (value1, value2) =>
+//   value1 === 100 || value2 === 100 || value1 + value2 === 100;
+// console.log(checkFunc(0, 100));
+// console.log(checkFunc(100, 0));
+// console.log(checkFunc(90, 10));
+// console.log(checkFunc(40, 60));
+// console.log(checkFunc(40, 0));
+
+/* Exercise 2
+ ------------------------ */
+
+let findFileExtention = (fileName) => fileName.slice(fileName.lastIndexOf("."));
+console.log(findFileExtention("fileName.doc"));
+console.log(findFileExtention("fileName.js"));
