@@ -98,10 +98,21 @@
 //   todayIs.getMonth() + 1 + "/" + todayIs.getDate() + "/" + todayIs.getFullYear()
 // );
 
-const formatDate = (today = new Date()) => {
-  const days = today.getDate();
-  const months = today.getMonth() + 1;
-  const years = today.getFullYear();
-  return `${months}/${days}/${years}`;
-};
-console.log(formatDate());
+// const formatDate = (today = new Date()) => {
+//   const days = today.getDate();
+//   const months = today.getMonth() + 1;
+//   const years = today.getFullYear();
+//   return `${months}/${days}/${years}`;
+// };
+// console.log(formatDate());
+
+/*Exercise 05*/
+function addNew(word) {
+  if (word.indexOf("New!") === 0) {
+    return word;
+  } else {
+    word = "New!" + word;
+    return word;
+  }
+}
+console.log(addNew("New! Offers"));
