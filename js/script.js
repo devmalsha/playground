@@ -107,12 +107,16 @@
 // console.log(formatDate());
 
 /*Exercise 05*/
-function addNew(word) {
-  if (word.indexOf("New!") === 0) {
-    return word;
-  } else {
-    word = "New!" + word;
-    return word;
-  }
-}
-console.log(addNew("New! Offers"));
+// function addNew(word) {
+//   if (word.indexOf("New!") === 0) {
+//     return word;
+//   } else {
+//     word = "New!" + word;
+//     return word;
+//   }
+// }
+// console.log(addNew("New! Offers"));
+
+const addNewWord = (word) =>
+  word.indexOf("New!") === 0 ? word : "New! " + word;
+console.log(addNewWord("New! Offers"));
