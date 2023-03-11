@@ -72,14 +72,21 @@
 // }
 
 // wordPlay("malshza");
-let word = "thedath";
-let splitedWord = word.split("");
+// let word = "thedath";
+// let splitedWord = word.split("");
 
-console.log(splitedWord);
-splitedWord.map(myFunc);
+// console.log(splitedWord);
+// splitedWord.map(myFunc);
 
-function myFunc(indexIs) {
-  let newCharactor = indexIs.charCodeAt(0) + 1;
-  let newLetter = String.fromCharCode(newCharactor);
-  console.log(newLetter);
-}
+// function myFunc(indexIs) {
+//   let newCharactor = indexIs.charCodeAt(0) + 1;
+//   let newLetter = String.fromCharCode(newCharactor);
+//   console.log(newLetter);
+// }
+
+const moveCharsForward = (word) =>
+  word
+    .split("")
+    .map((indexIs) => String.fromCharCode(indexIs.charCodeAt(0) + 1))
+    .join("");
+console.log(moveCharsForward("malsha"));
