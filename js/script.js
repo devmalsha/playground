@@ -72,7 +72,14 @@
 // }
 
 // wordPlay("malshza");
+let word = "thedath";
+let splitedWord = word.split("");
 
-const moveCharForward = (word) => word.split("").map();
+console.log(splitedWord);
+splitedWord.map(myFunc);
 
-console.log(moveCharForward("abcd"));
+function myFunc(indexIs) {
+  let newCharactor = indexIs.charCodeAt(0) + 1;
+  let newLetter = String.fromCharCode(newCharactor);
+  console.log(newLetter);
+}
