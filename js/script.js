@@ -84,9 +84,16 @@
 //   console.log(newLetter);
 // }
 
-const moveCharsForward = (word) =>
-  word
-    .split("")
-    .map((indexIs) => String.fromCharCode(indexIs.charCodeAt(0) + 1))
-    .join("");
-console.log(moveCharsForward("malsha"));
+// const moveCharsForward = (word) =>
+//   word
+//     .split("")
+//     .map((indexIs) => String.fromCharCode(indexIs.charCodeAt(0) + 1))
+//     .join("");
+// console.log(moveCharsForward("malsha"));
+
+/* Exercise 04*/
+
+const todayIs = new Date();
+console.log(
+  todayIs.getMonth() + 1 + "/" + todayIs.getDate() + "/" + todayIs.getFullYear()
+);
