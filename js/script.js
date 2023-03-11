@@ -93,7 +93,15 @@
 
 /* Exercise 04*/
 
-const todayIs = new Date();
-console.log(
-  todayIs.getMonth() + 1 + "/" + todayIs.getDate() + "/" + todayIs.getFullYear()
-);
+// const todayIs = new Date();
+// console.log(
+//   todayIs.getMonth() + 1 + "/" + todayIs.getDate() + "/" + todayIs.getFullYear()
+// );
+
+const formatDate = (today = new Date()) => {
+  const days = today.getDate();
+  const months = today.getMonth() + 1;
+  const years = today.getFullYear();
+  return `${months}/${days}/${years}`;
+};
+console.log(formatDate());
