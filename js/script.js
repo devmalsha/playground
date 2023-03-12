@@ -29,6 +29,18 @@
 // const concatenate = (value1, value2) => value1.slice(1) + value2.slice(1);
 // console.log(concatenateWords("Malsha", "Gimhani"));
 
-const nearstValue = (num1, num2) => (100 - num1 < 100 - num2 ? num1 : num2);
+// const nearstValue = (num1, num2) => (100 - num1 < 100 - num2 ? num1 : num2);
 
-console.log(nearstValue(99, 70));
+// console.log(nearstValue(99, 70));
+
+const specCharctors = (word, letter) => {
+  let countIs = word.split("").filter(function (ltr) {
+    return ltr === letter;
+  }).length;
+  return countIs;
+};
+
+const string2to4 = (word, letter) =>
+  specCharctors(word, letter) >= 2 && specCharctors(word, letter) <= 4;
+
+console.log(string2to4("Thedath", "a"));
