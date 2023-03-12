@@ -25,3 +25,6 @@
 const concatenateWords = (word1, word2) =>
   word1.substring(1) + word2.substring(1);
 console.log(concatenateWords("Malsha", "Gimhani"));
+
+const concatenate = (value1, value2) => value1.slice(1) + value2.slice(1);
+console.log(concatenateWords("Malsha", "Gimhani"));
