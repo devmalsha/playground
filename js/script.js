@@ -19,5 +19,9 @@
 // console.log(makeNewString("Thedath"));
 // console.log(makeNewString("ad"));
 
-const extractFirstHalf = (word) => word.slice(0, word.length / 2);
-console.log(extractFirstHalf("bottle"));
+// const extractFirstHalf = (word) => word.slice(0, word.length / 2);
+// console.log(extractFirstHalf("bottle"));
+
+const concatenateWords = (word1, word2) =>
+  word1.substring(1) + word2.substring(1);
+console.log(concatenateWords("Malsha", "Gimhani"));
