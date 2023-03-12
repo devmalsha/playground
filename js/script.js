@@ -11,10 +11,13 @@
 // };
 // console.log(newString("Malsha"));
 
-const makeNewString = (word) =>
-  word.length < 3 ? word : word.slice(0, 3) + word.slice(-3);
-console.log(makeNewString("Malsha"));
-console.log(makeNewString("Ranasinghe"));
-console.log(makeNewString("Gimhani"));
-console.log(makeNewString("Thedath"));
-console.log(makeNewString("ad"));
+// const makeNewString = (word) =>
+//   word.length < 3 ? word : word.slice(0, 3) + word.slice(-3);
+// console.log(makeNewString("Malsha"));
+// console.log(makeNewString("Ranasinghe"));
+// console.log(makeNewString("Gimhani"));
+// console.log(makeNewString("Thedath"));
+// console.log(makeNewString("ad"));
+
+const extractFirstHalf = (word) => word.slice(0, word.length / 2);
+console.log(extractFirstHalf("bottle"));
