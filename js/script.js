@@ -1,46 +1,9 @@
-// Exercise part 2 - Ex -1
-// const newString = (word) => {
-//   if (word.length < 3) {
-//     return word;
-//   } else {
-//     let newArrayIs = word.split("");
-//     let myArrayFirstPart = newArrayIs.slice(0, 3);
-//     let myArraySecondPart = newArrayIs.slice(-3).reverse();
-//     return myArrayFirstPart.join("") + myArraySecondPart.join("");
-//   }
-// };
-// console.log(newString("Malsha"));
-
-// const makeNewString = (word) =>
-//   word.length < 3 ? word : word.slice(0, 3) + word.slice(-3);
-// console.log(makeNewString("Malsha"));
-// console.log(makeNewString("Ranasinghe"));
-// console.log(makeNewString("Gimhani"));
-// console.log(makeNewString("Thedath"));
-// console.log(makeNewString("ad"));
-
-// const extractFirstHalf = (word) => word.slice(0, word.length / 2);
-// console.log(extractFirstHalf("bottle"));
-
-// const concatenateWords = (word1, word2) =>
-//   word1.substring(1) + word2.substring(1);
-// console.log(concatenateWords("Malsha", "Gimhani"));
-
-// const concatenate = (value1, value2) => value1.slice(1) + value2.slice(1);
-// console.log(concatenateWords("Malsha", "Gimhani"));
-
-// const nearstValue = (num1, num2) => (100 - num1 < 100 - num2 ? num1 : num2);
-
-// console.log(nearstValue(99, 70));
-
-const specCharctors = (word, letter) => {
-  let countIs = word.split("").filter(function (ltr) {
-    return ltr === letter;
-  }).length;
-  return countIs;
+// Exercise part 3 - Ex -1
+const findEvenNumbers = function (myArray) {
+  return myArray.filter(findingEvenNumber).length;
+  function findingEvenNumber(items) {
+    return items % 2 == 0;
+  }
 };
 
-const string2to4 = (word, letter) =>
-  specCharctors(word, letter) >= 2 && specCharctors(word, letter) <= 4;
-
-console.log(string2to4("Thedath", "a"));
+console.log(findEvenNumbers(["1", "2", "3", "4", "5", "6"]));
