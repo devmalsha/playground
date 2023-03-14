@@ -38,16 +38,20 @@
 //
 
 // Ex-4
-const findLargestEvenNumber = (numbersArray) => {
-  let evenNumbers = numbersArray.filter((EvenNumbers) => EvenNumbers % 2 == 0);
-  let highestEvenNumberIs = "";
-  for (let i = 0; i < evenNumbers.length; i++) {
-    evenNumbers[i] > evenNumbers[i + 1]
-      ? (highestEvenNumberIs = evenNumbers[i])
-      : (highestEvenNumberIs = evenNumbers[i + 1]);
+// const findLargestEvenNumber = (numbersArray) => {
+//   let evenNumbers = numbersArray.filter((EvenNumbers) => EvenNumbers % 2 == 0);
+//   let highestEvenNumberIs = "";
+//   for (let i = 0; i < evenNumbers.length; i++) {
+//     evenNumbers[i] > evenNumbers[i + 1]
+//       ? (highestEvenNumberIs = evenNumbers[i])
+//       : (highestEvenNumberIs = evenNumbers[i + 1]);
 
-    return highestEvenNumberIs;
-  }
-};
+//     return highestEvenNumberIs;
+//   }
+// };
 
+// console.log(findLargestEvenNumber([3, 5, 8, 2, 4]));
+
+const findLargestEvenNumber = (numbersArray) =>
+  Math.max(...numbersArray.filter((EvenNumbers) => EvenNumbers % 2 == 0));
 console.log(findLargestEvenNumber([3, 5, 8, 2, 4]));
