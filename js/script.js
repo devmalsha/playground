@@ -52,6 +52,16 @@
 
 // console.log(findLargestEvenNumber([3, 5, 8, 2, 4]));
 
-const findLargestEvenNumber = (numbersArray) =>
-  Math.max(...numbersArray.filter((EvenNumbers) => EvenNumbers % 2 == 0));
-console.log(findLargestEvenNumber([3, 5, 8, 2, 4]));
+// const findLargestEvenNumber = (numbersArray) =>
+//   Math.max(...numbersArray.filter((EvenNumbers) => EvenNumbers % 2 == 0));
+// console.log(findLargestEvenNumber([3, 5, 8, 2, 4]));
+
+/* Ex-5*/
+
+const replaceFirstLetter = (word) => {
+  let newArray = word.split("");
+  newArray.splice(0, 1, "$");
+  console.log(newArray.join(""));
+};
+
+replaceFirstLetter("Malsha");
