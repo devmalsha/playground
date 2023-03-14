@@ -25,13 +25,29 @@
 // console.log(numberOfEvenValues("21"));
 
 // Ex-3
-const findingArrayOrder = (arrayOfIntergers) => {
-  for (let i = 0; i < arrayOfIntergers.length; i++) {
-    if (arrayOfIntergers[i + 1] < arrayOfIntergers[i]) {
-      return "Not Assending";
-    }
-    return "Assending";
+// const findingArrayOrder = (arrayOfIntergers) => {
+//   for (let i = 0; i < arrayOfIntergers.length; i++) {
+//     if (arrayOfIntergers[i + 1] < arrayOfIntergers[i]) {
+//       return "Not Assending";
+//     }
+//     return "Assending";
+//   }
+// };
+
+// console.log(findingArrayOrder([1, 2, 3, 4]));
+//
+
+// Ex-4
+const findLargestEvenNumber = (numbersArray) => {
+  let evenNumbers = numbersArray.filter((EvenNumbers) => EvenNumbers % 2 == 0);
+  let highestEvenNumberIs = "";
+  for (let i = 0; i < evenNumbers.length; i++) {
+    evenNumbers[i] > evenNumbers[i + 1]
+      ? (highestEvenNumberIs = evenNumbers[i])
+      : (highestEvenNumberIs = evenNumbers[i + 1]);
+
+    return highestEvenNumberIs;
   }
 };
 
-console.log(findingArrayOrder([1, 2, 3, 4]));
+console.log(findLargestEvenNumber([3, 5, 8, 2, 4]));
