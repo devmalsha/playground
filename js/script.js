@@ -58,10 +58,13 @@
 
 /* Ex-5*/
 
-const replaceFirstLetter = (word) => {
-  let newArray = word.split("");
-  newArray.splice(0, 1, "$");
-  console.log(newArray.join(""));
-};
+// const replaceFirstLetter = (word) => {
+//   let newArray = word.split("");
+//   newArray.splice(0, 1, "$");
+//   console.log(newArray.join(""));
+// };
 
-replaceFirstLetter("Malsha");
+// replaceFirstLetter("Malsha");
+
+const replaceFirstLetter = (word) => word.replace(/[0-9]/, "$");
+console.log(replaceFirstLetter("M2alsha"));
