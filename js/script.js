@@ -9,7 +9,14 @@
 
 // Ex-2
 
-const checkEquality = (objectA, objectB) =>
-  Object.keys(objectA).every((prop) => objectB[prop]);
+// const checkEquality = (objectA, objectB) =>
+//   Object.keys(objectA).every((prop) => objectB[prop]);
 
-console.log(checkEquality({ a: 1, b: 2, c: 3 }, { a: 1, b: 2, c: 3, e: 4 }));
+// console.log(checkEquality({ a: 1, b: 2, c: 3 }, { a: 1, b: 2, c: 3, e: 4 }));
+
+// Ex-3
+const create2DArray = (csvString) =>
+  csvString.split("\n").map((rowArray) => rowArray.split(","));
+
+let data = "abc, def, ghi\njkl, mno,pqr\nstu, vux, xya";
+console.log(create2DArray(data));
