@@ -33,12 +33,19 @@
 
 // console.log(hexaDecimalCodeGen());
 
-const hexaDecimalCodeGen = () => Math.floor(Math.random() * 16).toString(16);
+// const hexaDecimalCodeGen = () => Math.floor(Math.random() * 16).toString(16);
 
-const colorCodeGenerator = () =>
-  "#" + Array.from({ length: 6 }).map(hexaDecimalCodeGen).join("");
+// const colorCodeGenerator = () =>
+//   "#" + Array.from({ length: 6 }).map(hexaDecimalCodeGen).join("");
 
-console.log(colorCodeGenerator());
-console.log(colorCodeGenerator());
-console.log(colorCodeGenerator());
-console.log(colorCodeGenerator());
+// console.log(colorCodeGenerator());
+// console.log(colorCodeGenerator());
+// console.log(colorCodeGenerator());
+// console.log(colorCodeGenerator());
+
+// Ex-5
+
+const functionStatus = (dataArray, functionIs) =>
+  dataArray.every(predirectedFunction);
+const predirectedFunction = (ele) => ele > 0;
+console.log(functionStatus([1, 2, 3, 0, 5], predirectedFunction));
