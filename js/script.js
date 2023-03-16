@@ -14,13 +14,22 @@
 // console.log(alphabaticOrder("malsha"));
 
 // Ex-2
+// let vowels = ["a", "e", "i", "o", "u"];
+// const countVowels = (str) => {
+//   let ele = str.split("");
+//   let filterLength = "";
+//   for (let i = 0; i < ele.length; i++) {
+//     filterLength = ele.filter((x) => vowels.indexOf(x) > -1).length;
+//   }
+//   return filterLength;
+// };
+// console.log(countVowels("malsha"));
+
 let vowels = ["a", "e", "i", "o", "u"];
-const countVowels = (str) => {
-  let ele = str.split("");
-  let filterLength = "";
-  for (let i = 0; i < ele.length; i++) {
-    filterLength = ele.filter((x) => vowels.indexOf(x) > -1).length;
-  }
-  return filterLength;
-};
-console.log(countVowels("malsha"));
+const countVowels = (str) =>
+  str
+    .split("")
+    .filter((letterNeedToBeFind) => vowels.indexOf(letterNeedToBeFind) > -1)
+    .length;
+
+console.log(countVowels("javascript"));
