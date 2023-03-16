@@ -21,14 +21,24 @@
 // let data = "abc, def, ghi\njkl, mno,pqr\nstu, vux, xya";
 // console.log(create2DArray(data));
 
-const hexaDecimalCodeGen = () => {
-  let hexaCodeArray = ["#"];
-  for (let i = 0; i < 6; i++) {
-    let element1 = Math.floor(Math.random() * 16).toString(16);
-    hexaCodeArray.push(element1);
-  }
-  let word = hexaCodeArray.join("");
-  return word;
-};
+// const hexaDecimalCodeGen = () => {
+//   let hexaCodeArray = ["#"];
+//   for (let i = 0; i < 6; i++) {
+//     let element1 = Math.floor(Math.random() * 16).toString(16);
+//     hexaCodeArray.push(element1);
+//   }
+//   let word = hexaCodeArray.join("");
+//   return word;
+// };
 
-console.log(hexaDecimalCodeGen());
+// console.log(hexaDecimalCodeGen());
+
+const hexaDecimalCodeGen = () => Math.floor(Math.random() * 16).toString(16);
+
+const colorCodeGenerator = () =>
+  "#" + Array.from({ length: 6 }).map(hexaDecimalCodeGen).join("");
+
+console.log(colorCodeGenerator());
+console.log(colorCodeGenerator());
+console.log(colorCodeGenerator());
+console.log(colorCodeGenerator());
