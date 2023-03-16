@@ -45,7 +45,23 @@
 
 // Ex-5
 
-const functionStatus = (dataArray, functionIs) =>
-  dataArray.every(predirectedFunction);
-const predirectedFunction = (ele) => ele > 0;
-console.log(functionStatus([1, 2, 3, 0, 5], predirectedFunction));
+// const functionStatus = (dataArray, functionIs) =>
+//   dataArray.every(predicatedFunction);
+// const predicatedFunction = (ele) => ele > 0;
+// console.log(functionStatus([1, 2, 3, 0, 5], predicatedFunction));
+
+const functionStatus = (dataArray, functionIs) => {
+  for (let i = 0; i < dataArray.length; i++) {
+    if (!functionIs(dataArray[i])) {
+      return false;
+    }
+  }
+  return true;
+};
+
+const predicatedFunction = (i) => i > 0;
+
+console.log(functionStatus([1, 2, 3, 0, 5], predicatedFunction));
+console.log(functionStatus([1, 2, 3, 4, 5], predicatedFunction));
+console.log(functionStatus([1, 2, 3, -1, 5], predicatedFunction));
+console.log(functionStatus([1, 2, 3, 8, 0], predicatedFunction));
