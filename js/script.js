@@ -58,17 +58,24 @@
 
 // ex-4
 
-const extractUniqueChars = (Str) => {
-  let arr1 = Str.split("");
-  let arr2 = [];
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr2.includes(arr1[i])) {
-      arr2.splice(arr2.indexOf(arr1[i]), 1);
-    } else {
-      arr2.push(arr1[i]);
-    }
-  }
-  return arr2;
-};
+// const extractUniqueChars = (Str) => {
+//   let arr1 = Str.split("");
+//   let arr2 = [];
+//   for (let i = 0; i < arr1.length; i++) {
+//     if (arr2.includes(arr1[i])) {
+//       arr2.splice(arr2.indexOf(arr1[i]), 1);
+//     } else {
+//       arr2.push(arr1[i]);
+//     }
+//   }
+//   return arr2;
+// };
 
-console.log(extractUniqueChars("aabbcc"));
+// console.log(extractUniqueChars("thedath"));
+
+const extractUniqueChars = (str) =>
+  str
+    .split("")
+    .filter((item, index, arr) => arr.slice(index + 1).indexOf(item) === -1);
+
+console.log(extractUniqueChars("malsha"));
