@@ -37,21 +37,38 @@
 // Ex-3
 // LK coins - 20, 10, 5, 2, 1
 
-let coinArray = [20, 10, 5, 2, 1];
+// let coinArray = [20, 10, 5, 2, 1];
 
-let coinAmount = "";
+// let coinAmount = "";
 
-let coinSelection = [];
-const coinMaker = (amount) => {
-  for (let i = 0; i < coinArray.length; i++) {
-    coinAmount = Math.floor(amount / coinArray[i]);
-    for (let j = 0; j < coinAmount; j++) {
-      coinSelection.push(coinArray[i]);
+// let coinSelection = [];
+// const coinMaker = (amount) => {
+//   for (let i = 0; i < coinArray.length; i++) {
+//     coinAmount = Math.floor(amount / coinArray[i]);
+//     for (let j = 0; j < coinAmount; j++) {
+//       coinSelection.push(coinArray[i]);
+//     }
+
+//     amount = amount - coinArray[i] * coinAmount;
+//   }
+//   return coinSelection;
+// };
+
+// console.log(coinMaker(46));
+
+// ex-4
+
+const extractUniqueChars = (Str) => {
+  let arr1 = Str.split("");
+  let arr2 = [];
+  for (let i = 0; i < arr1.length; i++) {
+    if (arr2.includes(arr1[i])) {
+      arr2.splice(arr2.indexOf(arr1[i]), 1);
+    } else {
+      arr2.push(arr1[i]);
     }
-
-    amount = amount - coinArray[i] * coinAmount;
   }
-  return coinSelection;
+  return arr2;
 };
 
-console.log(coinMaker(46));
+console.log(extractUniqueChars("aabbcc"));
