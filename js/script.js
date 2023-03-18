@@ -73,9 +73,31 @@
 
 // console.log(extractUniqueChars("thedath"));
 
-const extractUniqueChars = (str) =>
-  str
-    .split("")
-    .filter((item, index, arr) => arr.slice(index + 1).indexOf(item) === -1);
+// const extractUniqueChars = (str) =>
+//   str
+//     .split("")
+//     .filter((item, index, arr) => arr.slice(index + 1).indexOf(item) === -1);
 
-console.log(extractUniqueChars("malsha"));
+// console.log(extractUniqueChars("malsha"));
+
+const firstRepeatedChar = (str) => {
+  let firstNonRepeatedLetter = [];
+  let givenStringArray = str.split("");
+  for (let i = 0; i < givenStringArray.length; i++) {
+    if (firstNonRepeatedLetter.indexOf(givenStringArray[i]) == -1) {
+      firstNonRepeatedLetter.push(givenStringArray[i]);
+    } else {
+      firstNonRepeatedLetter.splice(
+        firstNonRepeatedLetter.indexOf(givenStringArray[i]),
+        1
+      );
+    }
+  }
+
+  return firstNonRepeatedLetter[0];
+};
+
+console.log(firstRepeatedChar("esggg"));
+console.log(firstRepeatedChar("abc"));
+console.log(firstRepeatedChar("malsha"));
+console.log(firstRepeatedChar("thedath"));
